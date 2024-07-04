@@ -1,0 +1,69 @@
+Shortcut	Action
+Startup Shortcuts	
+D	Boot to Apple Diagnostics
+N	Boot from a network server
+T	Boot in Target Disk Mode
+Shift	Boot in Safe Mode
+Cmd + R	Boot to macOS Recovery
+Option + Cmd + R	Boot to macOS Recovery over the internet
+Cmd + S	Boot in Single-User Mode
+Cmd + V	Boot in Verbose Mode
+Option	Boot to Startup Manager, to pick other startup disks if available
+Cmd + Option + P + R	Reset NVRAM or PRAM
+F12	Eject removable media
+Global Shortcuts	
+Shift + Cmd + 3	Take screenshot of entire screen
+Shift + Cmd + 4	Take screenshot of selected area
+Shift + Cmd + 4, then Space	Take screenshot of selected window
+Cmd + A	Select all
+Cmd + F	Find
+Cmd + H	Hide current window
+Option + Cmd + H	Hide all other windows
+Cmd + M	Minimize current window
+Option + Cmd + M	Minimize all windows
+Cmd + W	Close current window
+Option + Cmd + W	Close all windows
+Cmd + O	Open
+Cmd + P	Print
+Cmd + S	Save
+Cmd + C	Copy
+Cmd + V	Paste (copy)
+Option + Cmd + V	Paste (cut) i.e. move copied item to current location
+Shift + Option + Cmd + V	Paste and match style
+Cmd + Z	Undo
+Cmd + ?	Help
+Cmd + , (Comma)	Open Preferences for current app
+Cmd + Space	Open Spotlight search
+Cmd + Tab	Switch to the next open app
+Cmd + ~ (Tilde)	Switch to the next window in the current app
+Control + Cmd + Q	Lock the screen
+Shift + Cmd + Q	Log out
+Option + Shift + Cmd + Q	Log out instantly
+Cmd + Option + Esc	Force quit
+Cmd + Option + Eject	Activate Sleep mode
+Shift + Control + Eject	Put display(s) to sleep
+Cmd + Control + Eject	Quit all apps and restart
+Control + Eject	Choose from Sleep, Restart, and Shutdown options
+Finder Shortcuts	
+Enter	Rename selected file or folder
+Space	Open preview of selected file
+Option + Space	Open preview of selected file in fullscreen mode
+Shift + Cmd + G	Go to folder...
+Shift + Cmd + N	Create new folder
+Shift + Cmd + Delete	Empty the Trash folder
+Option + Shift + Cmd + Delete	Empty the Trash folder immediately
+Cmd + 1	Icon View
+Cmd + 2	List View
+Cmd + 3	Column View
+Cmd + D	Duplicate selected file or folder
+Cmd + I	Get info
+Cmd + J	View options
+Cmd + N	Open new Finder window
+Cmd + T	Open new Finder tab
+Cmd + [	Back
+Cmd + ]	Forward
+Cmd + Delete	Move selected item(s) to Trash
+Cmd + Up	Move up one folder
+Cmd + Down	Move down one folder
+Cmd + Option + I	Show Attributes Inspector
+Cmd + Control + N	With files selected, create a new folder and immediately move selected files into that folder

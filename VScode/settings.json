@@ -1,0 +1,47 @@
+{
+    "window.zoomLevel": 0,
+    "files.autoSaveDelay": 0,
+    "window.titleBarStyle": "native",
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.wordWrap": "on",
+    "editor.multiCursorModifier": "alt",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.tokenColorCustomizations": {
+
+        "comments": "#707070"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "emmet.includeLanguages": {
+        "erb": "html",
+        "ejs": "html",
+        "javascript": "javascriptreact"
+    },
+    "emeraldwalk.runonsave": {
+        "commands": [
+             {
+                "match": "cheat-sheets\\\\.*",
+                "isAsync": true,
+                "cmd": ".auto/commit.sh"
+             },
+             {
+                "match": ".*",
+                "isAsync": true,
+                "cmd": "echo test message"
+             }
+             
+        ]
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+        "xml": {
+            "attr_quotes": "single"
+        }
+    },
+    "json.schemas": [
+    
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Noctis",
+    "liveServer.settings.donotShowInfoMsg": true
+}

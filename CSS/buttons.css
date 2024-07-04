@@ -1,0 +1,61 @@
+/* 
+:link — for styling the default link state
+:visited — for styling the link after it’s been visited by the user
+:hover — for styling the link when the mouse is sitting over it
+:focus — for styling the link when the keyboard has tab-focused it
+:active — for styling the link when the mouse button is pressed down on it
+
+It’s important that these link states go in this direction: link, visited, hover, focus, active. There’s a fun a mnemonic to remember the order: “Lord Vader’s Handle Formerly Anakin”.
+*/
+
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.btn-one {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+    transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  }
+  
+  .btn-one:hover,
+  .btn-one:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: .9;
+  }
+  
+  .btn-two {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+
+  .btn-two:hover {
+    background: #666;
+  }

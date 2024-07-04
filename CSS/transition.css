@@ -1,0 +1,46 @@
+/* Timing Functions - speed curves
+
+    linear - same speed from start to end
+    ease - slow, fast, slow - default
+    ease-in - slow start
+    ease-out - slow end
+    ease-in-out - slow start and end
+    cubic-bezier(n,n,n,n)
+*/
+
+
+
+div {
+
+    /*  
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease; //speed curve
+    transition-delay: 1s; 
+    */
+
+    /*       property   duration        */
+    transition: width     2s; 
+
+
+    /*       T-function   delay      */
+    transition: ease       .5s; 
+
+    
+    /*  property / duration / T-function / delay  */
+    transition: width    2s     ease .5;
+
+
+    /*  width duration 2secs */ /*  height duration 1sec */ /*  Transform .3secs delay  */
+    transition: width 2s, height 1s linear .5s, transform .3s;
+    fill: red;
+}
+
+
+
+.div:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    fill: yellow;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html> <!-- Syntax for HTML 5 document type -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .send-email {
+            border: 1px black solid;
+            padding: .5em;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- ====================== -->
+            <!-- FORMS --> 
+    <!-- ====================== -->
+    <form action="/path" method="get">
+        <label for=""></label>
+        <input type="number"><!-- will show keypad when set to number -->
+        
+        <!-- DELETE METHOD -->
+        <form action="/dishes" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <button>delete</button>
+        </form>
+
+
+        <!-- PATCH / UPDATE METHOD -->
+        <form action="/dishes" method="post">
+    
+            <input type="hidden" name="_method" value="patch">
+            <input type="hidden" name="id" value="" >
+           
+            <label for="">name</label>
+            <input name="name" type="text" value="" placeholder="id">
+        </form>
+    </form>
+
+    <form class="send-email" action="mailto:you@yourdomain.com "> 
+        Name: <input name="Name" value=""<br> 
+        Email: <input name="Email" value=""><br>  
+        <br><center><input type="submit"></center> 
+      </form> 
+
+
+
+    <!-- ======================= -->
+            <!-- INPUTS -->
+    <!-- ======================= -->
+    <label for="">email</label>
+    <input name="email" type="email"><!-- show "@" symbol when set to email-->
+
+    <label for="">password</label>
+    <input name="password" type="password">
+
+    <label for="">range</label>
+    <input name="range" type="range" max="100"(stepping)>
+
+    <label for="">number</label>
+    <input name="number" type="number">
+
+    <label for="">submit</label>
+    <input type="button">
+
+
+
+    <!-- ======================= -->
+            <!-- DROP DOWN -->
+    <!-- ======================= -->
+
+    <select name="" id="">
+        <option value="">one</option>
+        <option value="">two</option>
+        <option value="">three</option>
+        <option value="">four</option>
+    </select>
+
+    <select name="" id="">
+        <option value="">one</option>
+        <option value="">two</option>
+        <option value="">three</option>
+        <option value="">four</option>
+    </select>
+
+    <!-- ============================ -->
+              <!-- Layouts -->
+    <!-- ============================ -->
+    <article>
+        <!--  -->
+    </article>
+
+    <main>
+
+    </main>
+
+    <section>
+
+    </section>
+
+
+
+     <!-- ============================ -->
+                <!-- Table -->
+    <!-- ============================ -->
+    <table border="4" cellpadding="2" cellspacing="2" width="100%">  
+        <tr> <!-- table row -->
+            <th>Month</th> <!-- table header / bold & centred text default --> 
+            <th>Savings</th>
+            <th>Spend</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>January</td> <!-- table data -->
+            <td style="text-align:right">$100</td> 
+            <td style="text-align:right">$20</td>
+            <td style="text-align:right">$120</td>
+          <tr/>
+          <tr>
+            <td>February</td>
+            <td style="text-align:right">$80</td>
+            <td style="text-align:right">$20</td>
+            <td style="text-align:right">$100</td>
+          </tr>
+    </table> 
+
+
+
+    <!-- ============================ -->
+        <!-- Paragraphs and text -->
+    <!-- ============================ -->
+    <p>
+        <strong> </strong> <!-- inline BOLD highlight-->
+        <em></em> <!-- emphasize text (Italic by default) -->
+        <span></span>
+    </> 
+    <marquee bgcolor="#cccccc" loop="-1" 
+        scrollamount="2" width="100%"> 
+        Example Marquee
+    </marquee> <!-- emphasize text (Italic by default) -->
+    <hr width="50%" size="3" /> <!-- Horizontal rule-->
+    <br> <!-- Break / add one line of spacing -->
+
+
+
+    <!-- ============================ -->
+                <!-- Links -->
+    <!-- ============================ -->
+    <a href=""></a> <!-- link with href as the location or route -->
+    <a href="" target="_blank"></a> <!-- Target will open a new tab -->
+
+
+
+    <!-- ============================ -->
+                <!-- Lists -->
+    <!-- ============================ -->
+    <ul></ul> <!-- Unordered list / bullet points / disc / nav bar -->
+    <ol></ol> <!-- Numbered list -->
+    <li></li> <!-- List. Dot point -->
+
+
+
+    <!-- ============================ -->
+                <!-- Image -->
+    <!-- ============================ -->
+    <img src="" alt="">
+
+    
+
+    <script src='script.js'></script> <!--  add script -->
+</body>
+</html>
+
+<!--  -->

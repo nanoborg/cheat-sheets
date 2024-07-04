@@ -1,0 +1,72 @@
+echo = repeat on screen
+say = say things that you type
+tab = auto complete
+top = look busy!!!!
+date = date
+cal = calender
+man = manual
+
+============
+viewing
+============
+wc = word count
+ls = list
+ls -a = list all files, even hidden
+ls -l = long listing, extra information
+ls -1 = single file per line
+-l = lines
+pwd = print working directory
+clear = page down to a clean space
+cat = concatenate have a look inside file
+more = show the contents in pages, used for bigger documents
+cmd k or ctrl l = clears the terminal
+open . = open current directory from terminal
+grep = filter
+head -n = show what ever amount of lines from the top
+tail -n = show what ever amount of lines from the bottom
+df -h = view hdd details
+sudo powermetrics --samplers smc |grep -i "CPU die temperature"
+
+============
+navigation
+============
+~ = home directory
+/ = root directory
+cd = change directory
+cd (space_bar) = return to home directory
+../ = go back a directory
+. = current directory
+ctrl+a = jump to start
+ctrl+e = jump to end
+q = quit
+
+============
+creating/deleting
+============
+mkdir = make directory
+touch = create a file
+cp = copy
+rm = remove
+rm -r = remove directories and all the recursive files 
+rm -rf .git = remove .git folder
+rmdir = remove directory
+rm -r destination/ *	remove all files in directory		
+rmdir = remove folder/  -r
+rmdir -r = remove everything in the folder
+mv = move
+mv = oldname.txt newname.txt will rename* the file
+echo = screen will display your input
+echo "txt" > file.txt = write a single line to a new file
+> = redirect whats on screen to f ile, this will delete existing content
+>> = append "text" to file
+nano = edit file with terminal
+chmod +x file.file // make a file executable
+touch -t YYYYMMDDhhmm 'file path' = change creation date
+touch -mt YYYYMMDDhhmm 'file path' = change modification date
+chflags hidden /path/folder = change to hidden view
+
+
+
+=============
+ENV = environmental variables / set up in .profile export 
+env | grep variableName = search for an environmental variable

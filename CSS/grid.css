@@ -1,0 +1,34 @@
+/* ===============
+    Parents
+=============== */
+div {
+    display: grid; 
+    grid-template-columns: ; /* units: px % 1fr, repeat(5, 1fr) */
+    grid-template-rows: ;
+    grid-template: 50% 50% / repeat(10, 1fr); /* short hand: rows / cols  */
+    grid-gap: em or rem;
+    align-items(not content): center; /* start, end, stretch */
+    justify-items:(not content): center; /* start, end, stretch */
+    place-items: center ; /* Shorthand for align items & justify items: start center,  */ 
+
+}
+
+
+
+/* ===============
+    Children
+=============== */
+children {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-colum: ; /* short hand: start / finish */
+    grid-row: ;
+    grid-area: ; /* short hand: row start / col start / row end / col end */
+    order: 2;
+
+}
+
+
+div {
+
+}

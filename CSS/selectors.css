@@ -1,0 +1,97 @@
+/* css rule set. 
+
+*selector
+html {
+  *property *value
+    colour: white  <-- *declaration
+}
+*/
+
+* {
+  /* select everything */
+}
+
+div * {
+  /* within all div, select all */
+}
+
+div p {
+  /* descendant - select all p elements within div*/
+}
+
+div, p {
+  /* select all multiple - all div / children and all p / children */
+}
+
+body > p > h1 {
+  /* child - select only the direct child of the parent element */
+}
+
+div + p {
+  /* adjacent - select the `p` immediate element following div */
+}
+
+a ~ b {
+  /* select all elements of the same type following a */
+}
+
+div:nth-child(2) {
+  /* target the div: the number of the child */
+}
+
+div:nth-last-child() {
+  /* target the div: counting backwards */
+}
+
+
+div:nth-of-type() {
+  /* target the div: select the child number, 2n (every second), even or odd  */
+}
+
+div:nth-of-type(1n+3){
+  /* target the div: select every nth, starting from 3 */
+}
+
+div:only-of-type {
+  /* target the one element: if there is only one */
+}
+
+div:first-of-type {
+  /* target the div: first of it's kind */
+}
+
+div:last-of-type {
+  /* target the div: will select the last div in the html*/
+}
+
+div:empty {
+  /* target a div that is empty */
+}
+
+:not(div, p) {
+  /* exclude the target, not what you actually want */
+}
+
+[attribute] {
+  /* target attribute of an element */
+}
+
+div[attribute] {
+  /* target the div with attribute of */
+}
+
+div[attribute="value"] {
+  /* target an element that has the attribute vale of */
+}
+
+[attribute^="va"] {
+  /* ^ target an element, which the attribute value starts with "va" */
+}
+
+[attribute$="ue"] {
+  /* $ target an element, where the attribute value ends with "ue" */
+}
+
+[attribute*="alu"] {
+  /* * target an element, where the value contains "alu" */
+}

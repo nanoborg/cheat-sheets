@@ -1,0 +1,42 @@
+/* # Flex Box
+
+## Properties
+display: flex
+
+the parent container needs to enable flex to control the children.
+
+### justify-content
+This is to align items horizontally **_main_** axis
+
+### align-items
+This is to align items on the **_cross_** axis.
+
+### flex-direction
+
+
+/* ===============
+    Parent
+=============== */
+
+flex-parent {
+    display: flex;
+    justify-content: flex-start ; /* Main axis, accept when the direction has been changed: flex-end, center, space-around, space-evenly, space-between */
+    align-items: flex-start; /* Cross axis, except when the direction has been changed: flex-end center, center, baseline: the imaginary line text is written on, stretch: span the with of the column or row */
+    align-content: center; /* when aligning multiple rows of elements, flex-start, flex-end, space-evenly, space-around, space-between */
+    flex-wrap: wrap; /* wrap elements to a new row, wrap-reverse*/
+    flex-direction: row; /* set between row or column, row-reverse */
+    flex-flow: direction wrap;
+
+
+
+
+/* ===============
+    Children
+=============== */
+flex-children {
+    order: 1; /* -1, 2 */
+    align-self: start; /* end, center, space-around, space-between */
+    flex-grow: 1; /* 2 */
+    flex-shrink: 3; 
+    flex-basis: ; /* will set the initial width, will allow it to shrink */
+}
