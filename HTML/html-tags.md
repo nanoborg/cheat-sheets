@@ -8,6 +8,7 @@
 - [Media Tags](#media-tags)
 - [Interactive Elements](#interactive-elements)
 - [Other Tags](#other-tags)
+- [Attributes & Values](#attributes-and-values)
 
 <br>
 <br>
@@ -41,6 +42,7 @@
 
 * [Index](#index)
 
+---
 
 <br>
 <br>
@@ -71,6 +73,7 @@
 
 * [Index](#index)
 
+---
 
 <br>
 <br>
@@ -95,6 +98,7 @@
 
 * [Index](#index)
 
+---
 
 <br>
 <br>
@@ -120,6 +124,7 @@
 
 * [Index](#index)
 
+---
 
 <br>
 <br>
@@ -136,6 +141,7 @@
 
 * [Index](#index)
 
+---
 
 <br>
 <br>
@@ -157,6 +163,100 @@
 
 * [Index](#index)
 
+---
 
 <br>
 <br>
+
+
+## Attributes and Values
+
+### **1. Attributes & Values Used in All Tags**
+
+| Attribute         | Applies To   | Values                                 | Description                                 |
+|-------------------|--------------|----------------------------------------|---------------------------------------------|
+| `id`              | All tags     | Unique string                          | Unique element identifier.                  |
+| `class`           | All tags     | Space-separated class names            | Assigns classes to element.                 |
+| `style`           | All tags     | Inline CSS styles                      | Inline CSS for the element.                 |
+| `title`           | All tags     | Text string                            | Tooltip text.                               |
+| `hidden`          | All tags     | `hidden`                               | Hides the element.                          |
+| `lang`            | All tags     | Language code (`en`, `fr`)             | Content language.                           |
+| `dir`             | All tags     | `ltr`, `rtl`, `auto`                   | Text direction.                             |
+| `data-*`          | All tags     | Custom data (`data-user="1234"`)       | Custom data attributes.                     |
+| `role`            | All tags     | ARIA role (`button`, `navigation`)     | Accessibility role.                         |
+| `translate`       | All tags     | `yes`, `no`                            | Translation control.                        |
+| `draggable`       | All tags     | `true`, `false`                        | Draggable element.                          |
+| `contenteditable` | All tags     | `true`, `false`                        | Editable content.                           |
+| `contextmenu`     | All tags     | Element `id` of the menu               | Context menu identifier.                    |
+
+### **2. Layout Tags**
+
+| Attribute     | Applies To                                | Values                                 | Description                                 |
+|---------------|-------------------------------------------|----------------------------------------|---------------------------------------------|
+| `align`       | `<div>`, `<table>`, `<iframe>`            | `left`, `center`, `right`              | Deprecated: Horizontal alignment.           |
+| `bgcolor`     | `<table>`, `<tr>`, `<td>`, `<th>`         | Color name or hex value (`#ffffff`)    | Background color.                           |
+| `width`       | `<table>`, `<td>`, `<th>`, `<img>`, `<iframe>` | Pixels or percentage (`100px`, `50%`) | Element width.                              |
+| `height`      | `<img>`, `<iframe>`, `<video>`            | Pixels or percentage (`100px`, `50%`)  | Element height.                             |
+
+### **3. Text Tags**
+
+| Attribute     | Applies To                                  | Values                                 | Description                                 |
+|---------------|---------------------------------------------|----------------------------------------|---------------------------------------------|
+| `dir`         | `<p>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<span>` | `ltr`, `rtl`, `auto`                   | Text direction.                             |
+| `lang`        | `<p>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<span>` | Language code (`en`, `fr`)             | Content language.                           |
+| `spellcheck`  | All text tags                               | `true`, `false`                        | Spell check control.                        |
+| `title`       | All text tags                               | Text string                            | Tooltip text.                               |
+
+### **4. Forms & Input Tags**
+
+| Attribute     | Applies To                                      | Values                                 | Description                                 |
+|---------------|-------------------------------------------------|----------------------------------------|---------------------------------------------|
+| `name`        | `<input>`, `<textarea>`, `<select>`, `<button>` | String                                 | Form element name.                          |
+| `value`       | `<input>`, `<button>`                           | String                                 | Form element value.                         |
+| `placeholder` | `<input>`, `<textarea>`                         | Text string                            | Input hint.                                 |
+| `disabled`    | `<input>`, `<button>`, `<select>`               | `disabled`                             | Disables element.                           |
+| `required`    | `<input>`, `<textarea>`, `<select>`             | `required`                             | Required input.                             |
+| `readonly`    | `<input>`, `<textarea>`                         | `readonly`                             | Read-only input.                            |
+| `form`        | `<input>`, `<button>`, `<textarea>`, `<select>` | Element `id` of the form               | Associates with a form.                     |
+| `autofocus`   | `<input>`, `<textarea>`, `<select>`             | `autofocus`                            | Autofocus on page load.                     |
+| `accept`      | `<input type="file">`                           | MIME types (`image/*`, `audio/*`)      | Acceptable file types.                      |
+| `maxlength`   | `<input>`, `<textarea>`                         | Number                                 | Maximum input length.                       |
+| `minlength`   | `<input>`, `<textarea>`                         | Number                                 | Minimum input length.                       |
+
+### **5. Media Tags**
+
+| Attribute     | Applies To                                      | Values                                 | Description                                 |
+|---------------|-------------------------------------------------|----------------------------------------|---------------------------------------------|
+| `src`         | `<img>`, `<video>`, `<audio>`, `<script>`       | URL                                    | Media or resource URL.                      |
+| `alt`         | `<img>`                                         | Text string                            | Alternative text for images.                |
+| `type`        | `<button>`, `<input>`, `<link>`, `<script>`, `<source>` | Specific type (`button`, `text`)       | Defines type or MIME type.                  |
+| `controls`    | `<video>`, `<audio>`                            | `controls`                             | Display media controls.                     |
+| `autoplay`    | `<video>`, `<audio>`                            | `autoplay`                             | Autoplay media.                             |
+| `loop`        | `<video>`, `<audio>`                            | `loop`                                 | Loop media playback.                        |
+| `muted`       | `<video>`, `<audio>`                            | `muted`                                | Mute media by default.                      |
+| `preload`     | `<video>`, `<audio>`                            | `auto`, `metadata`, `none`             | Preload media before playback.              |
+
+### **6. Interactive Elements**
+
+| Attribute     | Applies To                                      | Values                                 | Description                                 |
+|---------------|-------------------------------------------------|----------------------------------------|---------------------------------------------|
+| `href`        | `<a>`, `<link>`                                 | URL                                    | Linked document URL.                        |
+| `target`      | `<a>`                                           | `_blank`, `_self`, `_parent`, `_top`   | Where to open the link.                     |
+| `accesskey`   | `<a>`, `<button>`, `<input>`, `<textarea>`, `<select>` | Single character                       | Shortcut key.                               |
+| `tabindex`    | Interactive elements (e.g., `<a>`, `<button>`, `<input>`) | Integer                                | Tab order index.                            |
+
+### **7. Other Tags**
+
+| Attribute     | Applies To                                      | Values                                 | Description                                 |
+|---------------|-------------------------------------------------|----------------------------------------|---------------------------------------------|
+| `charset`     | `<meta>`                                        | Character encoding (`UTF-8`)           | Character encoding for the document.        |
+| `http-equiv`  | `<meta>`                                        | HTTP header (`content-type`, `refresh`) | HTTP header value.                         |
+| `rel`         | `<link>`, `<a>`                                 | Relationship values (`stylesheet`, `noopener`) | Relationship to linked document.           |
+| `media`       | `<link>`, `<style>`                             | Media type (`screen`, `print`)         | Media type for linked content.              |
+| `title`       | All tags                                        | Text string                            | Tooltip text.                               |
+
+
+
+* [Index](#index)
+
+---
