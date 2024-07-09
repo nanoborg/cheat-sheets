@@ -5,6 +5,7 @@
 - [Layout Tags](#layout-tags)
 - [Text Tags](#text-tags)
 - [Forms & Input Tags](#forms-and-input-tags)
+- [Lists & Tables](#lists-and-tables)
 - [Media Tags](#media-tags)
 - [Interactive Elements](#interactive-elements)
 - [Other Tags](#other-tags)
@@ -30,12 +31,6 @@
 | `<figcaption>`    | `style`                               | Defines a caption for a `<figure>` element.                                   |
 | `<details>`       | `open`, `style`                       | Defines additional details that the user can view or hide.                    |
 | `<summary>`       | `style`                               | Defines a visible heading for a `<details>` element.                          |
-| `<table>`         | `style`                               | Defines a table.                                                              |
-| `<tr>`            | `style`                               | Defines a row in a table. Used inside `<table>`.                              |
-| `<th>`            | `style`, `scope`, `colspan`, `rowspan`| Defines a header cell in a table. Used inside `<tr>`.                         |
-| `<td>`            | `style`, `colspan`, `rowspan`         | Defines a cell in a table. Used inside `<tr>`.                                |
-| `<thead>`         | `style`                               | Groups header content in a table.                                             |
-| `<tbody>`         | `style`                               | Groups body content in a table.                                               |
 | `<tfoot>`         | `style`                               | Groups footer content in a table.                                             |
 | `<colgroup>`      | `style`, `span`                       | Specifies a group of one or more columns in a table for formatting.           |
 | `<col>`           | `style`, `span`                       | Specifies column properties for each column within a `<colgroup>`.            |
@@ -54,10 +49,13 @@
 | `<p>`             | `style`            | Defines a paragraph.                                                  |
 | `<h1>` to `<h6>`  | `style`            | Define HTML headings, from largest `<h1>` to smallest `<h6>`.         |
 | `<strong>`        | `style`            | Defines important text. Renders as bold.                              |
+| `<abbr>`          | `style`, `title`   | Defines abbreviated text, create tooltip information.                 |
 | `<b>`             | `style`            | Defines bold text.                                                    |
 | `<em>`            | `style`            | Defines emphasized text. Renders as italic.                           |
 | `<i>`             | `style`            | Defines italic text.                                                  |
 | `<u>`             | `style`            | Defines underlined text.                                              |
+| `<kbd>`           | `style`            | Defines keyboard input, monospace font.                               |
+| `<q>`             | `style`            | Defines quotations marks around text.                                 |
 | `<cite>`          | `style`            | Defines a reference to a piece of creative work                       |
 | `<mark>`          | `style`            | Defines highlighted text.                                             |
 | `<small>`         | `style`            | Defines smaller text.                                                 |
@@ -66,6 +64,7 @@
 | `<sup>`           | `style`            | Defines superscripted text, above text like E = mc²                   |
 | `<sub>`           | `style`            | Defines subscripted text, bellow text like CO₂                        |
 | `<blockquote>`    | `cite`, `style`    | Defines a section quoted from another source.                         |
+| `<samp>`          | `style`            | Defines a sample of computer code.                                    |
 | `<pre>`           | `style`            | Defines preformatted text. Preserves both spaces and line breaks.     |
 | `<code>`          | `style`            | Defines a piece of computer code.                                     |
 | `<br>`            | None               | Inserts a single line break.                                          |
@@ -103,24 +102,51 @@
 <br>
 <br>
 
+## Lists and Tables
+
+| Tag           | Attributes                                                    | Description                                                       |
+|-------------  |---------------------------------------------------------------|-----------------------------------------------------------------  |
+| `<dl>`        | `action`, `method`, `style`                                   | Defines a description list.                              |
+| `<dt>`        |                                                               | Defines a description title  |
+| `<dd>`        |                                                               | Defines description data.                        |
+| `<table>`     | `style`                                                       | Defines a table.                                                              |
+| `<thead>`     | `style`                                                       | Groups header content in a table.                                             |
+| `<th>`        | `style`, `scope`, `colspan`, `rowspan`                        | Defines a header cell in a table. Used inside `<tr>`.                         |
+| `<tr>`        | `style`                                                       | Defines a row in a table. Used inside `<table>`.                              |
+| `<td>`        | `style`, `colspan`, `rowspan`                                 | Defines a cell in a table. Used inside `<tr>`.                                |
+| `<tbody>`     | `style`                                                       | Groups body content in a table.                                               |
+| `<ul>`        | `style`, `disabled`                                           | Groups related elements in a form.                                |
+| `<ol>`        | `style`                                                       | Defines a caption for a `<fieldset>`.                             |
+| `<li>`        | `style`                                                       | Defines a list element.   |
+| `<data>`      | `value`                                        | Specifies a value for that text.                          |
+| `<progress>`  | `value`, `max`, `style`                                       | Represents the completion progress of a task.                     |
+| `<meter>`     | `value`, `min`, `max`, `low`, `high`, `optimum`, `style`      | Represents a scalar measurement.                                  |
+
+* [Index](#index)
+
+---
+
+<br>
+<br>
+
 ## Media Tags
 
-| Tag           | Attributes                                                                            | Description                                                       |
-|---------------|------------------------------------------------------------                           |--------------------------------------------------------------     |
-| `<img>`       | `src`, `alt`, `width`, `height`, `style`, `title`                                     | Embeds an image.                                                  |
-| `<audio>`     | `src`, `controls`, `autoplay`, `loop`, `muted`, `style`                               | Defines embedded sound content.                                   |
-| `<video>`     | `src`, `controls`, `autoplay`, `loop`, `muted`, `width`, `height`, `style`, `poster`  | Defines embedded video content.                             |
-| `<source>`    | `src`, `type`, `style`                                                                | Specifies multiple media resources for `<audio>` or `<video>`.    |
-| `<track>`     | `kind`, `src`, `srclang`, `label`, `default`, `style`                                 | Defines text tracks for `<video>` or `<audio>`.                   |
-| `<picture>`   | `style`                                                                               | Contains zero or more `<source>` elements and one `<img>` element.|
-| `<iframe>`    | `src`, `width`, `height`, `style`, `frameborder`, `allow`, `allowfullscreen`          | Defines an inline frame (iframe).                                 |
-| `<embed>`     | `src`, `type`, `width`, `height`, `style`                                             | Embeds external content or applications.                          |
-| `<object>`    | `data`, `type`, `width`, `height`, `style`, `name`, `usemap`                          | Defines an embedded object.                                       |
-| `<param>`     | `name`, `value`, `style`                                                              | Defines parameters for an `<object>`.                             |
-| `<canvas>`    | `width`, `height`, `style`                                                            | Defines a canvas for drawing graphics.                            |
-| `<svg>`       | `style`, `width`, `height`, `viewBox`                                                 | Defines a container for SVG graphics.                             |
-| `<map>`       | `name`, `style`                                                                       | Defines an image map.                                             |
-| `<area>`      | `shape`, `coords`, `href`, `alt`, `style`, `target`                                   | Defines an area inside an image map.                              |
+| Tag           | Attributes                                                                            | Description                                                           |
+|---------------|------------------------------------------------------------------------------         |------------------------------------------------------------------     |
+| `<img>`       | `src`, `alt`, `width`, `height`, `style`, `title`                                     | Embeds an image.                                                      |
+| `<audio>`     | `src`, `controls`, `autoplay`, `loop`, `muted`, `style`                               | Defines embedded sound content.                                       |
+| `<video>`     | `src`, `controls`, `autoplay`, `loop`, `muted`, `width`, `height`, `style`, `poster`  | Defines embedded video content.                                       |
+| `<source>`    | `src`, `type`, `style`                                                                | Specifies multiple media resources for `<audio>` or `<video>`.        |
+| `<track>`     | `kind`, `src`, `srclang`, `label`, `default`, `style`                                 | Defines text tracks for `<video>` or `<audio>`.                       |
+| `<picture>`   | `style`                                                                               | Contains zero or more `<source>` elements and one `<img>` element.    |
+| `<iframe>`    | `src`, `width`, `height`, `style`, `frameborder`, `allow`, `allowfullscreen`          | Defines an inline frame (iframe).                                     |
+| `<embed>`     | `src`, `type`, `width`, `height`, `style`                                             | Embeds external content or applications.                              |
+| `<object>`    | `data`, `type`, `width`, `height`, `style`, `name`, `usemap`                          | Defines an embedded object.                                           |
+| `<param>`     | `name`, `value`, `style`                                                              | Defines parameters for an `<object>`.                                 |
+| `<canvas>`    | `width`, `height`, `style`                                                            | Defines a canvas for drawing graphics.                                |
+| `<svg>`       | `style`, `width`, `height`, `viewBox`                                                 | Defines a container for SVG graphics.                                 |
+| `<map>`       | `name`, `style`                                                                       | Defines an image map.                                                 |
+| `<area>`      | `shape`, `coords`, `href`, `alt`, `style`, `target`                                   | Defines an area inside an image map.                                  |
 
 * [Index](#index)
 
@@ -191,12 +217,12 @@
 
 ### **2. Layout Tags**
 
-| Attribute     | Applies To                                | Values                                 | Description                                 |
-|---------------|-------------------------------------------|----------------------------------------|---------------------------------------------|
-| `align`       | `<div>`, `<table>`, `<iframe>`            | `left`, `center`, `right`              | Deprecated: Horizontal alignment.           |
-| `bgcolor`     | `<table>`, `<tr>`, `<td>`, `<th>`         | Color name or hex value (`#ffffff`)    | Background color.                           |
-| `width`       | `<table>`, `<td>`, `<th>`, `<img>`, `<iframe>` | Pixels or percentage (`100px`, `50%`) | Element width.                              |
-| `height`      | `<img>`, `<iframe>`, `<video>`            | Pixels or percentage (`100px`, `50%`)  | Element height.                             |
+| Attribute     | Applies To                                    | Values                                    | Description                                 |
+|---------------|-------------------------------------------    |----------------------------------------   |---------------------------------------------|
+| `align`       | `<div>`, `<table>`, `<iframe>`                | `left`, `center`, `right`                 | Deprecated: Horizontal alignment.           |
+| `bgcolor`     | `<table>`, `<tr>`, `<td>`, `<th>`             | Color name or hex value (`#ffffff`)       | Background color.                           |
+| `width`       | `<table>`, `<td>`, `<th>`, `<img>`, `<iframe>` | Pixels or percentage (`100px`, `50%`)    | Element width.                              |
+| `height`      | `<img>`, `<iframe>`, `<video>`                | Pixels or percentage (`100px`, `50%`)     | Element height.                             |
 
 ### **3. Text Tags**
 
@@ -218,7 +244,7 @@
 | `required`    | `<input>`, `<textarea>`, `<select>`             | `required`                             | Required input.                             |
 | `readonly`    | `<input>`, `<textarea>`                         | `readonly`                             | Read-only input.                            |
 | `form`        | `<input>`, `<button>`, `<textarea>`, `<select>` | Element `id` of the form               | Associates with a form.                     |
-| `autofocus`   | `<input>`, `<textarea>`, `<select>`             | `autofocus`                            | Autofocus on page load.                     |
+| `autofocus`   | `<input>`, `<textarea>`, `<select>`             | `autofocus`, `true`                                 | Autofocus on page load.                     |
 | `accept`      | `<input type="file">`                           | MIME types (`image/*`, `audio/*`)      | Acceptable file types.                      |
 | `maxlength`   | `<input>`, `<textarea>`                         | Number                                 | Maximum input length.                       |
 | `minlength`   | `<input>`, `<textarea>`                         | Number                                 | Minimum input length.                       |
@@ -241,6 +267,7 @@
 | Attribute     | Applies To                                      | Values                                 | Description                                 |
 |---------------|-------------------------------------------------|----------------------------------------|---------------------------------------------|
 | `href`        | `<a>`, `<link>`                                 | URL                                    | Linked document URL.                        |
+| `download`    | `<a>`                                           | Text String                            | When clicking, the file will download.      |
 | `target`      | `<a>`                                           | `_blank`, `_self`, `_parent`, `_top`   | Where to open the link.                     |
 | `accesskey`   | `<a>`, `<button>`, `<input>`, `<textarea>`, `<select>` | Single character                       | Shortcut key.                               |
 | `tabindex`    | Interactive elements (e.g., `<a>`, `<button>`, `<input>`) | Integer                                | Tab order index.                            |
