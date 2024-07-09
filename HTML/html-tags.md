@@ -104,23 +104,21 @@
 
 ## Lists and Tables
 
-| Tag           | Attributes                                                    | Description                                                       |
-|-------------  |---------------------------------------------------------------|-----------------------------------------------------------------  |
-| `<dl>`        | `action`, `method`, `style`                                   | Defines a description list.                              |
-| `<dt>`        |                                                               | Defines a description title  |
-| `<dd>`        |                                                               | Defines description data.                        |
+| Tag           | Attributes                                                    | Description                                                                   |
+|-------------  |---------------------------------------------------------------|-------------------------------------------------------------------------      |
+| `<ul>`        | `style`, `disabled`                                           | Defines an unordered list with dot points.                                    |
+| `<ol>`        | `style`                                                       | Defines a ordered list with numbers.                                          |
+| `<li>`        | `style`                                                       | Defines a list element.                                                       |
+| `<dl>`        | `action`, `method`, `style`                                   | Defines a description list.                                                   |
+| `<dt>`        |                                                               | Defines a description term / name.                                            |
+| `<dd>`        |                                                               | Defines description data.                                                     |
 | `<table>`     | `style`                                                       | Defines a table.                                                              |
-| `<thead>`     | `style`                                                       | Groups header content in a table.                                             |
+| `<thead>`     | `style`                                                       | Defines a table header.                                                       |
 | `<th>`        | `style`, `scope`, `colspan`, `rowspan`                        | Defines a header cell in a table. Used inside `<tr>`.                         |
 | `<tr>`        | `style`                                                       | Defines a row in a table. Used inside `<table>`.                              |
 | `<td>`        | `style`, `colspan`, `rowspan`                                 | Defines a cell in a table. Used inside `<tr>`.                                |
 | `<tbody>`     | `style`                                                       | Groups body content in a table.                                               |
-| `<ul>`        | `style`, `disabled`                                           | Groups related elements in a form.                                |
-| `<ol>`        | `style`                                                       | Defines a caption for a `<fieldset>`.                             |
-| `<li>`        | `style`                                                       | Defines a list element.   |
-| `<data>`      | `value`                                        | Specifies a value for that text.                          |
-| `<progress>`  | `value`, `max`, `style`                                       | Represents the completion progress of a task.                     |
-| `<meter>`     | `value`, `min`, `max`, `low`, `high`, `optimum`, `style`      | Represents a scalar measurement.                                  |
+| `<data>`      | `value`                                                       | Specifies a value for that text.                                              |
 
 * [Index](#index)
 
